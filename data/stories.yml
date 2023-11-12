@@ -2,6 +2,67 @@ version: "3.1"
 
 stories:
 
+- story: find tattoo
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: need_inspiration
+  - action: utter_see
+  - action: utter_instagram
+  - intent: affirm
+  - action: utter_further_assist
+  - intent: deny
+  - action: utter_great
+
+
+- story: book_appointment
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_appointment
+  - action: utter_full_decision
+  - intent: affirm
+  - intent: inquire_slots
+  - action: action_get_available_time_slots
+  - action: utter_does_anyone_fit
+  - intent: affirm
+  - action: utter_specify_day
+  - intent: tell_day
+  - action: action_receive_day
+  - action: utter_specify_date
+  - intent: tell_date
+  - action: action_receive_date
+  - action: utter_specify_time
+  - intent: tell_time
+  - action: action_receive_time
+  - action: utter_follow-up_questions
+  - action: utter_ask_name
+  - intent: tell_name
+  - action: action_receive_name
+  - action: utter_first_time
+  - intent: affirm
+  - action: utter_ask_number
+  - intent: phone_number
+  - action: action_say_name
+  - action: action_confirm_appointment
+  - action: utter_verify_booking_details
+  - intent: affirm
+  - action: utter_further_assist
+  - intent: deny
+  - action: utter_see_you_soon
+
+  
+
+#story: price_estimate
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_great
+
 - story: happy path
   steps:
   - intent: greet
@@ -18,21 +79,3 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-- story: happy name path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: tell_name
-  - action: utter_name
-  

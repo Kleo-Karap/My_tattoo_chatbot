@@ -1,14 +1,47 @@
 version: "3.1"
 
+config:
+  store_entities_as_slots: true
+
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - tell_name
+- greet
+- tell_name
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- need_inspiration
+- inquire_slots
+- book_appointment
+- tell_day
+- tell_date
+- tell_time
+- phone_number
+- follow_up_visit
+
+
+entities: []
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: entity_name
+  day:
+    type: text  
+    mappings:
+    - type: from_entity
+      entity: entity_name
+  date:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: entity_name
+  time:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: entity_name
 
 responses:
   utter_greet:
@@ -24,29 +57,70 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
-  utter_goodbye:
-  - text: "Bye"
+  utter_instagram:
+  - text: "As a starting point I would suggest checking our popular designs in our Instagram page"
+    
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_see:
+  - text: "I see. It's great to hear that!"
 
-  utter_name:
-  - text: My name is PersaBot, your friend in the journey of getting your dream tattoo by Persa Tattoo studio!
+  utter_full_decision:
+  - text: "Great to hear that! Have you decided the design and the exact body spot?"
+
+  utter_does_anyone_fit:
+  - text: "Does any of this fit?"
+
+  utter_specify_day:
+  - text: "Please specify the day"
+
+  utter_specify_date:
+  - text: "Please specify the date"
+
+  utter_specify_time:
+  - text: "Please specify the time"
+
+  utter_follow-up_questions:
+  - text: "For successful booking of the appointment we would like you to answer the following questions: "
 
   utter_first_time:
   - text: Is this your first tattoo by Persa?
     
-  utter_follow_up:
-  - text: Is this a follow_up visit for an ongoing tattoo?
-     
-  utter_ask_age:
-  - text: What is your age?
+ # utter_follow_up:
+ # - text: Is this a follow_up visit for an ongoing tattoo?
+
+  utter_ask_name:
+  - text: Can I get your name please?
 
   utter_ask_number:
   - text: What is your phone number?
 
- utter_location:
-  - text: The studio is located in G. Parali 5, Thessaloniki
+#  utter_location:
+#  - text: The studio is located in Konstantinoupoleos 132 (54644) in Thessaloniki
+
+
+
+  utter_verify_booking_details: 
+  - text: "Are we good to go?"
+
+  utter_further_assist:
+  - text: "Cool! Is there something else you'd like me to help you with?" 
+  
+  utter_great:
+  - text: "It was great chating with you! And don't forget! Persa can always take your tattoo design to the next level! So don't hesitate to reach out for your next appointment!"
+
+  utter_see_you_soon:
+  - text: "It was great chating with you! See you soon!"
+
+
+actions: 
+- action_get_available_time_slots
+- action_say_name
+- action_receive_name
+- action_confirm_appointment
+- action_receive_time
+- action_receive_day
+- action_receive_date
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

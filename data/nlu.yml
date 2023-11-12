@@ -17,18 +17,18 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+#- intent: goodbye
+#  examples: |
+#    - cu
+#    - good by
+#    - cee you later
+#    - good night
+#    - bye
+#    - goodbye
+#    - have a nice day
+#    - see you around
+#    - bye bye
+#    - see you later
 
 - intent: affirm
   examples: |
@@ -38,6 +38,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - cool
 
 - intent: deny
   examples: |
@@ -82,40 +83,94 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
-- intent: tell_name
-  examples: |
-    - what is your name?
-    - what should I call you?
-    - tell me yor name
-    
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
 - intent: book_appointment
   examples: |
     - I would like to book an appointment for a tattoo
     - I would like to book an appointment
-    - Is there any empty slot for an appointment?
-
-intent: first_visit
+    
+- intent: inquire_slots
   examples: |
-    - This is my first time getting a tattoo
-    - This is my first visit in Persa tattoo
-    - That's my first time getting a tattoo by Persa
+    - What are the available time slots for this week?
+    - Are there any available time slots for this week?
+
 
 - intent: follow_up_visit
   examples: |
     - This is a follow_up visit for an ongoing tattoo
     - This is the second session for my tattoo
 
-- intent: ask_location
+#- intent: ask_location
+  #examples: |
+#    - Where is the tattoo studio?
+#    - Where can I find the Persa tattoo studio?
+#    - Where exactly is the Persa tattoo studio located?
+
+- intent: need_inspiration
   examples: |
-    - Where is the tattoo studio?
-    - Where can I find the Persa tattoo studio?
-    - Where exactly is the Persa tattoo studio located?
+    - I need inspiration for a new tattoo
+    - I'm looking for tattoo ideas
+    - I'm looking for a catalogue of your artwork
+    
+- intent: phone_number
+  examples: |
+    - 6949094806]
+    - +306949094806
+    - +30 6949094806
+
+- intent: tell_name
+  examples: |
+    - Kleopatra
+    - Maria
+    - Giorgos
+    - Marios
+
+- intent: tell_day
+  examples: |
+    - Monday
+    - monday
+    - Tuesday
+    - tuesday
+    - Wednesday
+    - wednesday
+    - Thursday
+    - thursday
+    - Friday
+    - friday
+    - Saturday
+    - saturday
+    - Sunday
+    - sunday
+
+- intent: tell_date
+  examples: |
+    - 13/11/2023
+    - 14/11/2023
+    - 15/11/2023
+    - 16/11/2023
+    - 17/11/2023
+    - 18/11/2023
+
+- intent: tell_time
+  examples: |
+    - 10:00 AM
+    - 10:00 a.m.
+    - 11:00 AM
+    - 11:00 a.m.
+    - 12:00 PM
+    - 12:00 p.m.
+    - 1:00 PM
+    - 1:00 p.m.
+    - 2:00 PM
+    - 2:00 p.m.
+    - 3:00 PM
+    - 3:00 p.m.
+    - 4:00 PM
+    - 4:00 p.m.
+    - 5:00 PM
+    - 5:00 p.m.
+    - 6:00 PM
+    - 6:00 p.m.
+    - 7:00 PM
+    - 7:00 p.m.
+    - 8:00 PM
+    - 8:00 p.m.
