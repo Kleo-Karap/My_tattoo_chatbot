@@ -8,10 +8,11 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - tell_name
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! I'm PersaBot! Your friend in the journey of getting your dream tattoo by Persa Tattoo studio :) How can I help you today?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -28,6 +29,18 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_name:
+  - text: My name is PersaBot, your friend in the journey of getting your dream tattoo by Persa Tattoo studio!
+
+  utter_first_time:
+  - text: Is this your first tattoo by Persa?
+    
+  utter_follow_up:
+  - text: Is this a follow_up visit for an ongoing tattoo?
+     
+utter_ask_age:
+  - text: What is your age?
 
 session_config:
   session_expiration_time: 60

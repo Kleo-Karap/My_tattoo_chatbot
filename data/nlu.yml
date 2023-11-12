@@ -83,9 +83,33 @@ nlu:
     - so saad
     - so sad
 
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - what should I call you?
+    - tell me yor name
+    
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: book_appointment
+  examples: |
+    - I would like to book an appointment for a tattoo
+    - I would like to book an appointment
+    - Is there any empty slot for an appointment?
+
+intent: first_visit
+  examples: |
+    - This is my first time getting a tattoo
+    - This is my first visit in Persa tattoo
+    - That's my first time getting a tattoo by Persa
+
+- intent: follow_up_visit
+  examples: |
+    - This is a follow_up visit for an ongoing tattoo
+    - This is the second session for my tattoo
