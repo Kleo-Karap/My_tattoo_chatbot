@@ -113,3 +113,9 @@ intent: first_visit
   examples: |
     - This is a follow_up visit for an ongoing tattoo
     - This is the second session for my tattoo
+
+- intent: ask_location
+  examples: |
+    - Where is the tattoo studio?
+    - Where can I find the Persa tattoo studio?
+    - Where exactly is the Persa tattoo studio located?

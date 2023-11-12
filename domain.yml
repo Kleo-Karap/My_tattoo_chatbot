@@ -39,9 +39,14 @@ responses:
   utter_follow_up:
   - text: Is this a follow_up visit for an ongoing tattoo?
      
-utter_ask_age:
+  utter_ask_age:
   - text: What is your age?
 
+  utter_ask_number:
+  - text: What is your phone number?
+
+ utter_location:
+  - text: The studio is located in G. Parali 5, Thessaloniki
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
