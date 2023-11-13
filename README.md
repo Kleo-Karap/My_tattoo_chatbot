@@ -34,7 +34,11 @@ So having a bot give an approximate price reply is saving Persa a lot of time in
 We know how important it is for the artist to build trust with each customer. 
 So we don't want ot automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
 Ideal functionalities: 
-
+1. Inspiration
+2. Book appointment
+3. Price estimation
+4. Geolocation
+   
 **Current issues** 
 
 ![image](https://github.com/Kleo-Karap/My_chatbot/assets/117507917/fe2bf29e-34a5-4dc7-b49c-f37991004d15)
