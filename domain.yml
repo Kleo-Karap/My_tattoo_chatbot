@@ -18,6 +18,7 @@ intents:
 - tell_time
 - phone_number
 - follow_up_visit
+- price_estimate
 
 
 entities: []
@@ -58,7 +59,7 @@ responses:
   - text: "Great, carry on!"
 
   utter_instagram:
-  - text: "As a starting point I would suggest checking our popular designs in our Instagram page"
+  - text: "As a starting point I would suggest checking our popular designs in our [Instagram page](https://www.instagram.com/persa_tattoo/)"
     
 
   utter_see:
@@ -66,6 +67,9 @@ responses:
 
   utter_full_decision:
   - text: "Great to hear that! Have you decided the design and the exact body spot?"
+
+  utter_consult_appointment:
+  - text: "You can also book a consulting appointment (free of charge) with Persa to discuss on the design you have in mind and get a more accurate price estimate. Would you like to book a consulting appointment?"
 
   utter_does_anyone_fit:
   - text: "Does any of this fit?"
@@ -97,6 +101,9 @@ responses:
 #  utter_location:
 #  - text: The studio is located in Konstantinoupoleos 132 (54644) in Thessaloniki
 
+  utter_pricelist:
+  - text: "To get a price approximation for your tattoo, you can refer to our hourly estimate chart:"
+    image: "https://storage.googleapis.com/msgsndr/rG91PG0PfPxspxHXNgmW/media/63d4b37d26d6cdd96cf80e10.png"
 
 
   utter_verify_booking_details: 
@@ -106,7 +113,7 @@ responses:
   - text: "Cool! Is there something else you'd like me to help you with?" 
   
   utter_great:
-  - text: "It was great chating with you! And don't forget! Persa can always take your tattoo design to the next level! So don't hesitate to reach out for your next appointment!"
+  - text: "It was great chating with you! And don't forget! Persa can always take your tattoo design to the next level!"
 
   utter_see_you_soon:
   - text: "It was great chating with you! See you soon!"

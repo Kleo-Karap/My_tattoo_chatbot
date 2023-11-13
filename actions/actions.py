@@ -6,9 +6,9 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionGetAvailableTimeSlots(Action):
     def name(self) -> Text:
         return "action_get_available_time_slots"
-
+    
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Replace this with your logic to get available time slots
+
         available_time_slots = {
             "Monday 13/11/2023": ["10:00 AM", "11:00 AM", "2:00 PM"],
             "Thursday 16/11/2023": ["9:00 AM", "12:00 PM", "3:00 PM"],
@@ -18,6 +18,7 @@ class ActionGetAvailableTimeSlots(Action):
         dispatcher.utter_message(text="Available time slots: {}".format(available_time_slots))
         return []
  
+
 
 class ActionReceiveName(Action):
 

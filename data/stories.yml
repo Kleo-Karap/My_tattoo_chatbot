@@ -52,16 +52,18 @@ stories:
   - action: utter_see_you_soon
 
   
-
-#story: price_estimate
-#  steps:
-#  - intent: greet
-#  - action: utter_greet
-#  - intent: mood_unhappy
-#  - action: utter_cheer_up
-#  - action: utter_did_that_help
-#  - intent: affirm
-#  - action: utter_great
+- story: price_estimate
+  steps:
+  - intent: greet
+  - intent: price_estimate
+  - action: utter_pricelist
+  - action: utter_first_time
+  - intent: affirm
+  - action: utter_consult_appointment
+  - intent: deny
+  - action: utter_further_assist
+  - intent: deny
+  - action: utter_great
 
 - story: happy path
   steps:

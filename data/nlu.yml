@@ -174,3 +174,12 @@ nlu:
     - 7:00 p.m.
     - 8:00 PM
     - 8:00 p.m.
+
+- intent: price_estimate
+  examples: |
+    - i want to know the price for a tattoo
+    - i would like to ask for the price of a tattoo
+    - i want to know the price for a specific tattoo
+    - hi
+    - how much for a full arm tattoo?
+    
