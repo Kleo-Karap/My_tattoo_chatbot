@@ -26,7 +26,7 @@ A common intent of our customers is that they have a tattoo in mind and they rea
 So having a bot give an approximate price reply is saving Persa a lot of time in standard chat interactions.
 
 **Main functionalities (so far)**
-1) Find tattoo --> current implementation: Redirect to our Instagrma page
+1) Find tattoo --> current implementation: Redirect to our Instagram page
 2) Book_appointment (fully_aware (ideal)-user) --> current implementation: Choose one of the available dates and times from a list (action: get_available_timeslots). No consideration of appointment duration.
 3) Price estimation --> current implementation: Give the user an approximate price list and let them understand about the price of the tattoo. No price given by the bot.
    
@@ -34,10 +34,11 @@ So having a bot give an approximate price reply is saving Persa a lot of time in
 We know how important it is for the artist to build trust with each customer. 
 So we don't want ot automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
 Ideal functionalities: 
-1. Inspiration
-2. Book appointment
-3. Price estimation
-4. Geolocation
+1. Tattoo-generation: Connect the chatbot with a platform like : https://blackink.ai/. This site requires the user to create an account, but we would like the user of the chat to have direct access to the pltforms interface to be able to generate their tattoo straightaway.
+2. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar.
+3. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
+4. Price estimation:
+5. Geolocation: Customer asks studio's location: Bot responds with a pin to Google maps from the user's current location to the studio
    
 **Current issues** 
 
