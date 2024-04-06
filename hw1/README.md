@@ -1,6 +1,10 @@
 # Dataset Info
 
-**Name** <p>multilingual task-oriented data</p>
+**Name** <p>Data used for the [SpanConveRT paper](https://arxiv.org/pdf/2005.08866.pdf):
+
+RESTAURANTS-8K: It comprises conversations from a commercial restaurant booking system, and covers 5 slots essential for the booking task: date, time, people, first name, last name.
+
+4 DSTC8-based: We extract span annotated data sets from SGDD in four different domains based on their large variety of slots: (1) bus and coach booking (labelled Buses_1), (2) buying tickets for events (Events_1), (3) property viewing (Homes_1) and renting cars (RentalCars_1).</p>
 
 **Data** <p>Cross lingual text data between English, Spanish and Thai. The domains present in the dataset are Weather (information about the weather), Alarm (set an alarm or do an action based on specified conditions) and Reminder (remind something on a specific time)</p>
 
