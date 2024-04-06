@@ -1,26 +1,28 @@
 # Dataset Info
 
-**Name** <p>Data used for the [SpanConveRT paper](https://arxiv.org/pdf/2005.08866.pdf):
+**Name** <p>Data used for the [SpanConveRT paper](https://arxiv.org/pdf/2005.08866.pdf)
+ </p>
+
+**Data** <p>
 
 RESTAURANTS-8K: It comprises conversations from a commercial restaurant booking system, and covers 5 slots essential for the booking task: date, time, people, first name, last name.
 
 4 DSTC8-based: We extract span annotated data sets from SGDD in four different domains based on their large variety of slots: (1) bus and coach booking (labelled Buses_1), (2) buying tickets for events (Events_1), (3) property viewing (Homes_1) and renting cars (RentalCars_1).</p>
 
-**Data** <p>Cross lingual text data between English, Spanish and Thai. The domains present in the dataset are Weather (information about the weather), Alarm (set an alarm or do an action based on specified conditions) and Reminder (remind something on a specific time)</p>
-
-**Download location** <p>https://fb.me/multilingual_task_oriented_data</p>
+**Download location** <p>https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/span_extraction</p>
 
 **Data collection** <p>In the first step of data accumulation 43000 English utterances were collected across the three listed domains, by asking native English speakers to produce utterances for each intent, the way they would ask an English conversational agent. </p> <p>Following the collection of the English utterances, two annotators would label the intent and spans that correspond to the slots for each utterance. If a disagreement arose, a third annotator would resolve the difference.</p><p>The next step was to collect the Spanish and Thai data, where native speakers of each language would translate a sample of the collected English utterances. For Spanish the same annotation procedure as English was followed, where the third annotator was a bilingual English/Spanish speaker, but for Thai as there was no bilingual speaker available, meaning that they had to throw out all utterances where the two annotators couldn’t come to the same conclusion.</p><p>In the end the Spanish and Thai portion of the dataset was upscaled to reach the same number of English samples.
 <p>The main use for this dataset is to facilitate the creation of conversational models in low-resource countries through cross lingual transfer learning.</p>
 
-**Annotation** <p>As mentioned above the annotation present, is an annotation of the slots for each intent of each domain, through the use of human annotators. The annotation is following a BIO format as used in NER.
+**Annotation** <p>
 
-**Format** <p>The dataset is stored in TSV and CONLLU files. Each line of each file contains the raw text, the tokenized text, some information about the tokenization, the language of the text, the character span of the tokens corresponding to each slot and the intent.
+**Format** <p>The datasets are stored in json files.
 
-**Licence** <p>CC-BY-SA, which is the Creative Commons Attribution-ShareAlike. Which stipulates that the work can be used freely as long as appropriate credit is given to the original dataset creators and that any work based on this dataset needs to be shared with the same license.
-
+**Licence** <p>CC-BY-4.0, which is the Creative Commons Attribution 4.0 International. It is the less restrictive Creative Commons Attribution licence is this international version 4, which gives recipients maximum freedom to do what they want with the work of the licensor. Recipents redistributing the work must give credit to the original author of the work (= attribution) and state changes if any, including a URL or link to the original work, this CC-BY licence and a copyright notice. Author can request to remove any attribution given information. Recipients re-distributing the work to third parties may not apply legal terms or technological measures (like Tivoisation) that legally restrict the rights granted by the licence. OKF (Open Knowledge Fundation) recommends this licence. The European Commission has adopted CC-BY-4.0 for sharing documents.
 # Stats
-<p>As mentioned above, this dataset isn’t a conversational dataset between two sides, rather it contains the utterances of a user towards a system and it classifies their intent and the corresponding slots. Meaning that there are no turns to count or extract stats for (1 turn per sample), for the same reasons there’s no dialogues (1 utterance and dialogue per sample). So the following dataset exploration will contain all expected stats per language and for the whole, as long as the unique intents measured.</p>
+<p>
+  
+</p>
 
 | language | Vocab | unique intent count | dialogue count | turn count | word count | word mean | word std | sentence count | sentence mean | sentence std |
 |----------|-------|---------------------|----------------|------------|------------|-----------|----------|----------------|---------------|--------------|
