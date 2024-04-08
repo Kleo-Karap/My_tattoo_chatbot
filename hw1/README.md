@@ -1,20 +1,29 @@
 # Dataset Info
 
-**Name** <p>Data used for the [SpanConveRT paper](https://arxiv.org/pdf/2005.08866.pdf)
+**Name** <p>Datasets used for the [SpanConveRT paper](https://arxiv.org/pdf/2005.08866.pdf)
+1. RESTAURANTS-8K
+2. DSTC8
  </p>
 
 **Data** <p>
 
 RESTAURANTS-8K: It comprises conversations from a commercial restaurant booking system, and covers 5 slots essential for the booking task: date, time, people, first name, last name.
 
-4 DSTC8-based: We extract span annotated data sets from SGDD in four different domains based on their large variety of slots: (1) bus and coach booking (labelled Buses_1), (2) buying tickets for events (Events_1), (3) property viewing (Homes_1) and renting cars (RentalCars_1).</p>
+DSTC8 datasets: Span-annotated datasets extracted from SGDD. The authors are interested in single-domain dialogue, so they chose
+datasets from four different domains of the original dataset SGDD (Schema Guided Dialog Dataset) : (1) bus and coach booking, (2) buying tickets for events, (3) property viewing and (4) renting cars. These domains were selected due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book) </p>
 
 **Download location** <p>https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/span_extraction</p>
 
-**Data collection** <p>In the first step of data accumulation 43000 English utterances were collected across the three listed domains, by asking native English speakers to produce utterances for each intent, the way they would ask an English conversational agent. </p> <p>Following the collection of the English utterances, two annotators would label the intent and spans that correspond to the slots for each utterance. If a disagreement arose, a third annotator would resolve the difference.</p><p>The next step was to collect the Spanish and Thai data, where native speakers of each language would translate a sample of the collected English utterances. For Spanish the same annotation procedure as English was followed, where the third annotator was a bilingual English/Spanish speaker, but for Thai as there was no bilingual speaker available, meaning that they had to throw out all utterances where the two annotators couldn’t come to the same conclusion.</p><p>In the end the Spanish and Thai portion of the dataset was upscaled to reach the same number of English samples.
-<p>The main use for this dataset is to facilitate the creation of conversational models in low-resource countries through cross lingual transfer learning.</p>
+**Data collection** <p> 
+RESTAURANTS-8K: The data set spans 5 slots (date, time, people, first name, last name) and consists of actual user utterances collected “in the wild” (Turn-based span extraction). This comes with a broad range of natural and colloquial expressions. </p>
+
+<p> DSTC8: For each of the four domains, they chose their first subdomain (Buses_1, Events_1, Homes_1, RentalCars_1), and took all turns from conversations that stay within this sub-domain. For the requested slots feature, they check for when the system action of the turn prior contains a REQUEST action. The training and development split is kept the same for all
+extracted turns. </p>
 
 **Annotation** <p>
+<p>RESTAURANTS-8K:Each training example is a dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. </p>
+<p>DSTC8: Since the datasets are extracted from SGDD, the same annotation guidelines were followed: The annotations include the active intents and dialogue states for each user utterance and the system actions for every system utterance. They create synthetic implementations of a total of 45 services or APIs over these domains. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. We then used a crowd-sourcing procedure to paraphrase these outlines to natural language utterances.Their novel crowd-sourcing procedure preserves all annotations obtained from the simulator and does not require any
+extra annotations after dialogue collection.</p>
 
 **Format** <p>The datasets are stored in json files.
 
