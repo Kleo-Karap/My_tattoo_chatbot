@@ -36,12 +36,12 @@ extra annotations after dialogue collection.</p>
   
 </p>
 
-| language | Vocab | unique intent count | dialogue count | turn count | word count | word mean | word std | sentence count | sentence mean | sentence std |
+|          |       |                     |                |            |            |           |          |                |               |              |
 |----------|-------|---------------------|----------------|------------|------------|-----------|----------|----------------|---------------|--------------|
-| English  | 4110  | 12                  | 30521          | 30521      | 221009     | 7.25      | 2.50     | 30580          | 1.001         | 0.044        |
-| Spanish  | 1974  | 12                  | 28936          | 28936      | 209512     | 7.24      | 2.75     | 28968          | 1.001         | 0.033        |
-| Thai     | 2101  | 10                  | 28028          | 28028      | 45422      | 1.62      | 0.96     | 28184          | 1.005         | 0.080        | 
-| Sum      | 7600  | 12                  | 87485          | 87485      | 475943     | 5.55      | 3.46     | 87732          | 1.002         | 0.005        | 
+|          |       |                     |                |            |            |           |          |                |               |              |
+|          |       |                     |                |            |            |           |          |                |               |              |
+|          |       |                     |                |            |            |           |          |                |               |              | 
+|          |       |                     |                |            |            |           |          |                |               |              | 
 
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
