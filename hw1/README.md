@@ -10,7 +10,7 @@
 RESTAURANTS-8K: It comprises conversations from a commercial restaurant booking system, and covers 5 slots essential for the booking task: date, time, people, first name, last name.
 
 DSTC8 datasets: Span-annotated datasets extracted from the Schema Guided Dialog Dataset (SGDD). The authors are interested in single-domain dialogue, so they chose
-datasets from four different domains of the original dataset (SGDD) : (1) bus and coach booking, (2) buying tickets for events, (3) property viewing and (4) renting cars. These domains were selected due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book) </p>
+datasets from four different domains of the original dataset (SGDD) : (1) bus and coach booking, (2) buying tickets for events, (3) property viewing and (4) renting cars. </p>
 
 **Download location** <p>https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/span_extraction</p>
 
@@ -48,5 +48,13 @@ extra annotations after dialogue collection.</p>
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
 # Discussion
-<p>The data does/ doesn’t look natural, since </p>
-<p>The limitations of this dataset are ....</p>
+<p>
+Considering the first dataset, Restaurants-8k, as it is mentioned above, each training example is a (human) dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. It seems that due to the collection process followed, the dataset maintain the naturalness of human conversations, since a lot of colloquial expressions are included. The main limitation is the lack of system respones, to be able to get a full overview of the dialogue length, in terms of system and user turns.
+</p>
+ 
+ <p> 
+ The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
+Dataset limitations: To reflect the constraints present in real-world services and APIs, we impose a few other restrictions. First, our dataset does not expose the set of all possible slot values for some slots.
+Second, real-world services can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location.  Each intent specifies a set of required slots and the system is not allowed to call this intent without specifying values for these required slots. Each intent also lists a set of optional slots with default values, which the user can override.
+
+</p>
