@@ -46,4 +46,5 @@ extra annotations after dialogue collection.</p>
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
 # Discussion
-<p>The data doesn’t look natural, since it’s comprised by one-way user utterances towards a system, with the Spanish and Thai utterances being a result of translation, making the naturality suffer even more. That being the case, the data has the exact format that can be used to easily train the intent recognition model of a conversational agent for a low-resource language, especially when extending a base model from the English language to work for the target languages.</p><p>The limitations of this dataset are the low number of samples for the target languages, since it’s very expensive and slow to create a quality human translation. To mitigate this issue the researchers upsampled both the Spanish and Thai part of the datasets, by duplicating samples randomly. This brought the languages to an adequate level for training, but sacrificed data quality.</p>
+<p>The data does/ doesn’t look natural, since </p>
+<p>The limitations of this dataset are ....</p>
