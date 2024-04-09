@@ -25,7 +25,7 @@ extracted turns.Concerning the dialogue collection procedure followed in the ori
 
 **Annotation** <p>
 <p>RESTAURANTS-8K:Each training example is a dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. </p>
-<p>DSTC8: Since the datasets are extracted from SGDD, the same annotation guidelines were followed: The annotations include the active intents and dialogue states for each user utterance and the system actions for every system utterance. They create synthetic implementations of a total of 45 services or APIs over these domains. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. We then used a crowd-sourcing procedure to paraphrase these outlines to natural language utterances.Their novel crowd-sourcing procedure preserves all annotations obtained from the simulator and does not require any
+<p>DSTC8: Since the datasets are extracted from SGDD, the same annotation guidelines were followed: The annotations include the active intents and dialogue states for each user utterance and the system actions for every system utterance. They create synthetic implementations of a total of 45 services or APIs over these domains. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They also use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances.Their procedure preserves all annotations obtained from the simulator and does not require any
 extra annotations after dialogue collection.</p>
 
 **Format** <p>The datasets are stored in json files.
@@ -58,11 +58,11 @@ extra annotations after dialogue collection.</p>
 # Discussion
 <p>
 
-Considering the first dataset, Restaurants-8k, as it is mentioned above, each training example is a (human) dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. It seems that due to the collection process followed, the dataset maintain the naturalness of human conversations, since a lot of colloquial expressions are included.
+Considering the first dataset, Restaurants-8k, it seems that due to the collection process followed, the dataset maintains the naturalness of human conversations, since a lot of colloquial expressions are included.
 </p>
  
  <p> 
- The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
+The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
 Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to the impracticalness and the unlimited possible slot values.
 Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
 
