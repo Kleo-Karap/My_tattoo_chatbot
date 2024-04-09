@@ -47,6 +47,13 @@ extra annotations after dialogue collection.</p>
 
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
+# Comments on statistics
+- Since the datasets contain only the human turns, each row entry in the "userInput" column is independent from the others, so calculating mean and std of the turns is not applicable
+- sent_length= the count of sentences per row
+- word_length= the count of words per sentence
+- in all 5 datasets we observe consistencies in the mean and standard deviation scores for both the word and the sentence length.
+- the higher numbers in the total turn,sentence,word count and vocab_size for the restaurants dataset are due to the bigger size of this dataset
+  
 # Discussion
 <p>
 Considering the first dataset, Restaurants-8k, as it is mentioned above, each training example is a (human) dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. It seems that due to the collection process followed, the dataset maintain the naturalness of human conversations, since a lot of colloquial expressions are included. The main limitation is the lack of system respones, to be able to get a full overview of the dialogue length, in terms of system and user turns.
@@ -54,7 +61,7 @@ Considering the first dataset, Restaurants-8k, as it is mentioned above, each tr
  
  <p> 
  The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
-Dataset limitations: To reflect the constraints present in real-world services and APIs, we impose a few other restrictions. First, our dataset does not expose the set of all possible slot values for some slots.
+Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots.
 Second, real-world services can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location.  Each intent specifies a set of required slots and the system is not allowed to call this intent without specifying values for these required slots. Each intent also lists a set of optional slots with default values, which the user can override.
 
 </p>
