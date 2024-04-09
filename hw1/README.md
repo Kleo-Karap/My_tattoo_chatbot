@@ -61,7 +61,7 @@ Considering the first dataset, Restaurants-8k, as it is mentioned above, each tr
  
  <p> 
  The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
-Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots.
-Second, real-world services can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location.  Each intent specifies a set of required slots and the system is not allowed to call this intent without specifying values for these required slots. Each intent also lists a set of optional slots with default values, which the user can override.
+Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to the impracticalness and the unlimited possible slot values.
+Second, the autohrs address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location.  Each intent specifies a set of required slots and the system is not allowed to call this intent without specifying values for these required slots. Each intent also lists a set of optional slots with default values, which the user can override. In this sense, we can agree that the dataset approaches real-life scenarios and maintains naturalness.
 
 </p>
