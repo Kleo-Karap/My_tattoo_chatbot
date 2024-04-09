@@ -51,6 +51,7 @@ extra annotations after dialogue collection.</p>
 - Since the datasets contain only the human turns, each row entry in the "userInput" column is independent from the others, so calculating mean and std of the turns is not applicable
 - sent_length= the count of sentences per row
 - word_length= the count of words per sentence
+- std_word_lenth=standard deviation of word length calculated based on the lengths of individual words per sentence
 - in all 5 datasets we observe consistencies in the mean and standard deviation scores for both the word and the sentence length.
 - the higher numbers in the total turn,sentence,word count and vocab_size for the restaurants dataset are due to the bigger size of this dataset
   
