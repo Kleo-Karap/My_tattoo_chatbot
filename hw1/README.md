@@ -57,12 +57,12 @@ extra annotations after dialogue collection.</p>
   
 # Discussion
 <p>
-Considering the first dataset, Restaurants-8k, as it is mentioned above, each training example is a (human) dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. It seems that due to the collection process followed, the dataset maintain the naturalness of human conversations, since a lot of colloquial expressions are included. The main limitation is the lack of system respones, to be able to get a full overview of the dialogue length, in terms of system and user turns.
+Considering the first dataset, Restaurants-8k, as it is mentioned above, each training example is a (human) dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. It seems that due to the collection process followed, the dataset maintain the naturalness of human conversations, since a lot of colloquial expressions are included.
 </p>
  
  <p> 
  The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
 Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to the impracticalness and the unlimited possible slot values.
-Second, the autohrs address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location.  Each intent specifies a set of required slots and the system is not allowed to call this intent without specifying values for these required slots. Each intent also lists a set of optional slots with default values, which the user can override. In this sense, we can agree that the dataset approaches real-life scenarios and maintains naturalness.
+Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
 
 </p>
