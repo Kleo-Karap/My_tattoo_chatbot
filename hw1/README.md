@@ -18,15 +18,16 @@ datasets from four different domains of the original dataset (SGDD) : (1) bus an
 RESTAURANTS-8K:The data set spans 5 slots (date, time, people, first name, last name) and consists of actual user utterances collected “in the wild” (Turn-based span extraction). This comes with a broad range of natural and colloquial expressions. </p>
 
 <p> DSTC8: For each of the four domains, they chose their first subdomain (Buses_1, Events_1, Homes_1, RentalCars_1), and took all turns from conversations that stay within this sub-domain. For the requested slots feature, they check for when the system action of the turn prior contains a REQUEST action. The training and development split is kept the same for all
-extracted turns.Concerning the dialogue collection procedure followed in the original dataset (SGDD), synthetic implementations of a total of 45 services or APIs over 45 domains were created. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They then use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances. </p>
+extracted turns.
+
+Concerning the dialogue collection procedure followed in the original dataset (SGDD), synthetic implementations of a total of 45 services or APIs over 45 domains were created. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They then use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances. </p>
 
 **Design Purpose**
-<p>The datasets were designed for conversational pretraining for dialog slot-filling tasks .Speciffically they were designed for SpanConveRT dialogue slot filling model, which frames the task as a turn-based, intent-agnostic span extraction task, making the slot-filling task independent of other system components.</p>
+<p>The datasets were designed for testing models on the dialog slot-filling tasks .Speciffically they were designed for SpanConveRT dialogue slot filling model, which frames the task as a turn-based, intent-agnostic span extraction task, making the slot-filling task independent of other system components.</p>
 
 **Annotation** <p>
 <p>RESTAURANTS-8K:Each training example is a dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. </p>
-<p>DSTC8: Since the datasets are extracted from SGDD, the same annotation guidelines were followed: The annotations include the active intents and dialogue states for each user utterance and the system actions for every system utterance. They create synthetic implementations of a total of 45 services or APIs over these domains. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They also use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances.Their procedure preserves all annotations obtained from the simulator and does not require any
-extra annotations after dialogue collection.</p>
+<p>DSTC8: Since the datasets are extracted from SGDD, the same annotation guidelines were followed: The annotations include the active intents and dialogue states for each user utterance and the system actions for every system utterance. They create synthetic implementations of a total of 45 services or APIs over these domains. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They also use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances.Their procedure preserves all annotations obtained from the simulator and does not require any extra annotations after dialogue collection.</p>
 
 **Format** <p>The datasets are stored in json files.
 
@@ -58,14 +59,13 @@ extra annotations after dialogue collection.</p>
 # Discussion
 <p>
 
-Considering the first dataset, Restaurants-8k, it seems that due to the collection process followed, the dataset maintains the naturalness of human conversations, since a lot of colloquial expressions are included.
+Considering the first dataset, Restaurants-8k, it seems that due to the collection process followed, the dataset maintains the naturalness through colloquial expressions and informal vocabulary.
 </p>
  
  <p> 
 The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
-Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to the impracticalness and the unlimited possible slot values.
+Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to impracticality and the unlimited possible slot values.
 Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
 
-Considering the above details on the collection precodure and the building purpose, I believe that a span extraction system/model like SpanConveRT in our case, will be able to learn meaningful representations from these data through conversational pretraining. The limitations in the slot values seem to comply with real-life scenarios.
-
+The datasets contain all necessary data for conducting the span extraction tasks, including : UuserInput, start and endIndex, 
 </p>
