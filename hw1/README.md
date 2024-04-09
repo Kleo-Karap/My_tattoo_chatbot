@@ -21,7 +21,7 @@ RESTAURANTS-8K:The data set spans 5 slots (date, time, people, first name, last 
 extracted turns.Concerning the dialogue collection procedure followed in the original dataset (SGDD), synthetic implementations of a total of 45 services or APIs over 45 domains were created. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They then use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances. </p>
 
 **Design Purpose**
-<p>The datasets were designed for developing and testing models for dialog slot-filling tasks in the context of task-oriented dialog systems.Speciffically they were designed for SpanConveRT dialogue slot filling model, which frames the task as a turn-based, intent-agnostic span extraction task, making the slot-filling task independent of other system components.</p>
+<p>The datasets were designed for conversational pretraining for dialog slot-filling tasks .Speciffically they were designed for SpanConveRT dialogue slot filling model, which frames the task as a turn-based, intent-agnostic span extraction task, making the slot-filling task independent of other system components.</p>
 
 **Annotation** <p>
 <p>RESTAURANTS-8K:Each training example is a dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. </p>
@@ -66,6 +66,6 @@ Considering the first dataset, Restaurants-8k, as it is mentioned above, each tr
 Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to the impracticalness and the unlimited possible slot values.
 Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
 
-Considering the above details on the collection precodure and the building purpose, I believe that a span extraction system/model like SpanConveRT in our case, will be able to learn from these data 
+Considering the above details on the collection precodure and the building purpose, I believe that a span extraction system/model like SpanConveRT in our case, will be able to learn meaningful representations from these data through conversational pretraining. The limitations in the slot values seem to comply with real-life scenarios.
 
 </p>
