@@ -67,5 +67,6 @@ The domains covered by the DSTC8 datasets were chosen due to their high number o
 Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to impracticality and the unlimited possible slot values.
 Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
 
-The datasets contain all necessary data for conducting the span extraction tasks, including : UuserInput, start and endIndex, 
+The datasets contain all necessary data for conducting the span extraction tasks, including : UserInput (text) and the labels (slot-value,start and endIndex)
+They claim that thanks to conversational pretraining the SpanConveRT model will be able to perform well on smaller datasets like ours.
 </p>
