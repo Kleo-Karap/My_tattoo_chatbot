@@ -37,14 +37,22 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 
 | domain     |total_turn_count|total_sent_count|mean_sent_count  |std_sent_count |total_word_count|mean_word_count |std_word_count |vocab_size|vocab_size_no_stopwords| 
 |------------|----------------|--------------- |---------------- |---------------|----------------|----------------|---------------|----------|-----------------------|
-| restaurants| 8198           |8673            | 1.058           | 0.254         | 68637          | 7.914          |  5.147        |  4484    |       4373            |
-| buses      | 1133           |1434            | 1.266           | 0.494         | 11377          | 7.934          |  4.808        |  513     |   443                 |          
-| events     | 1498           |1906            | 1.272           | 0.502         | 14562          |7.64            |  5.039        |  786     |  706                  |           
-| homes      | 2064           |2636            | 1.277           | 0.509         | 19733          | 7.486          |  4.765        |  752     | 667                   |      
-| car_rental | 874            |1095            | 1.253           | 0.472         | 8873           | 8.103          |  6.191        |  585     |516                    |
-| SUM        | 13767          |15744           | 1.144           | 0.387         | 123182         | 7.824	         |  5.175	       |  5281    |   5161                |
+| restaurants| 8198           |8783            | 1.071           | 0.283         | 62330          | 7.603          |  4.738        |  4426    |       4314            |
+| buses      | 1133           |1430            | 1.262           | 0.491         | 9694           | 8.556          |  4.459        |  501     |   429                 |          
+| events     | 1498           |1911            | 1.276           | 0.510         | 12209          | 8.150          |  4.645        |  773     |  692                  |           
+| homes      | 2064           |2621            | 1.270           | 0.505         | 16701          | 8.092          |  4.362        |  738     |    653                |      
+| car_rental | 874            |1103            | 1.262           | 0.485         | 7643           | 8.745          |  5.785        |  566     |     495               |
+| SUM        | 13767          |15848           | 1.151           | 0.398         | 108577         | 7.887	         |  4.740	       |  5202    |   5082                |
 
-<p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
+| domain     |unique_slots                                      |count           |
+|------------|--------------------------------------------------|--------------- |
+| restaurants|{people,date,time,first_name,last_name}           |5               | 
+| buses      |{to_location,leaving_date,from_location}          |3               |         
+| events     |{city_of_event,subcategory,date,event_name}       |4               |          
+| homes      |{area,visit_date}                                 |2               |  
+| car_rental |{dropoff_date,pickup_time,pickup_city,pickup_date}|4               | 
+| SUM        |                                                  |17              |
+<p>For the stats above each utterance was split into sentences and tokens for the calculations.Punctuation characters were omitted during word tokenization</p>
 
 # Comments on statistics
 Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn 
