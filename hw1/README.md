@@ -23,7 +23,7 @@ extracted turns.
 Concerning the dialogue collection procedure followed in the original dataset (SGDD), synthetic implementations of a total of 45 services or APIs over 45 domains were created. Their simulator framework interacts with these services to generate dialogue outlines, which are a structured representation of dialogue semantics. They then use a crowd-sourcing procedure to paraphrase these outlines to natural language utterances. </p>
 
 **Design Purpose**
-<p>The datasets were designed for testing models on the dialog slot-filling tasks .Speciffically they were designed for SpanConveRT dialogue slot filling model, which frames the task as a turn-based, intent-agnostic span extraction task, making the slot-filling task independent of other system components.</p>
+<p>The datasets were designed for testing models on the dialog slot-filling tasks .Speciffically they were designed for SpanConveRT dialogue slot filling model, which uses subword representations from conversational pretraining.The authors frame the slot-filling task as a span-extraction task and claim that this pretraining is crucial for the span-extraction performance in few-shot settings like ours, were the dataset sizes are small.
 
 **Annotation** <p>
 <p>RESTAURANTS-8K:Each training example is a dialog turn annotated with the slots requested by the system and character-based span indexing for all occurring values. </p>
@@ -32,10 +32,8 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 **Format** <p>The datasets are stored in json files.
 
 **Licence** <p>CC-BY-4.0, which is the Creative Commons Attribution 4.0 International. It is the less restrictive Creative Commons Attribution licence is this international version 4, which gives recipients maximum freedom to do what they want with the work of the licensor. Recipents redistributing the work must give credit to the original author of the work (= attribution) and state changes if any, including a URL or link to the original work, this CC-BY licence and a copyright notice. Author can request to remove any attribution given information. Recipients re-distributing the work to third parties may not apply legal terms or technological measures (like Tivoisation) that legally restrict the rights granted by the licence. OKF (Open Knowledge Fundation) recommends this licence. The European Commission has adopted CC-BY-4.0 for sharing documents. </p>
+
 # Stats
-<p>
-  
-</p>
 
 | domain     |total_turn_count|total_sent_count|mean_sent_length|std_sent_length|total_word_count|mean_word_length|std_word_length|vocab_size|vocab_size_no_stopwords| 
 |------------|----------------|---------------|---------------- |---------------|----------------|----------------|---------------|----------|------------------------|
