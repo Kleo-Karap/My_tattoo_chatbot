@@ -35,7 +35,7 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 
 # Stats
 
-| domain     |total_turn_count|total_sent_count|mean_sent_count  |std_sent_length|total_word_count|mean_word_length|std_word_length|vocab_size|vocab_size_no_stopwords| 
+| domain     |total_turn_count|total_sent_count|mean_sent_count  |std_sent_count |total_word_count|mean_word_count |std_word_count |vocab_size|vocab_size_no_stopwords| 
 |------------|----------------|--------------- |---------------- |---------------|----------------|----------------|---------------|----------|-----------------------|
 | restaurants| 8198           |8673            | 1.058           | 0.254         | 68637          | 7.914          |  2.354        |  4484    |       4373            |
 | buses      | 1133           |1434            | 1.266           | 0.494         | 11377          | 7.934          |  2.074        |  513     |   443                 |          
