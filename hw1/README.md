@@ -15,7 +15,7 @@ DSTC8 datasets: Span-annotated datasets extracted from the Schema Guided Dialog 
 **Download location** <p>https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/span_extraction</p>
 
 **Data collection** <p> 
-RESTAURANTS-8K:The data set spans 5 slots (date, time, people, first name, last name) and consists of actual user utterances collected “in the wild” (Turn-based span extraction). This comes with a broad range of natural and colloquial expressions. </p>
+RESTAURANTS-8K: The data set spans 5 slots (date, time, people, first name, last name) and consists of actual user utterances collected “in the wild” throuhh turn-based span extraction. No further information is provided about the data collection procedure   </p>
 
 <p> DSTC8: For each of the four domains, they chose their first subdomain (Buses_1, Events_1, Homes_1, RentalCars_1), and took all turns from conversations that stay within this sub-domain. For the requested slots feature, they check for when the system action of the turn prior contains a REQUEST action. The training and development split is kept the same for all
 extracted turns.
