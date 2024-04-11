@@ -54,8 +54,8 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 | SUM        |                                                  |17              |
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.Punctuation characters were omitted during word tokenization</p>
 
-# Comments on statistics
-Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn, since each human turn is independent from the others. 
+**Comments on statistics** <p>
+Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn, since each human turn is independent from the others. </p>
   
 # Discussion
 <p>
