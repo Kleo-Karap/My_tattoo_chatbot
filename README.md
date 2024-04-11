@@ -34,10 +34,29 @@ Persa is a reknown solo artist in Thessaloniki with high-demand. She has custome
 So outsourcing the process of booking appointments tailored on her agenda  via the use of a chatbot, will help her focus on what she does the best.
 ***
 
-**Main functionalities (so far)**
-1) Find tattoo --> current implementation: Redirect to our Instagram page
-2) Book_appointment (fully_aware (ideal)-user) --> current implementation: Choose one of the available dates and times from a list (action: get_available_timeslots). No consideration of appointment duration.
-3) Price estimation --> current implementation: Give the user an approximate hourly estimate price chart and let them understand about the price of the tattoo. Also recommend getting a consulting appointment to get an accurate price estimate by the artist.
+### Scenario 1
+***
+Customer wants to find a tattoo idea.
+The bot needs to be able to 
+1) Redirect to Persa's Instagram page
+
+
+
+### Scenario 2
+***
+Customer wants to book an appointment ((fully_aware (ideal)-user).
+The bot needs to be able to 
+1) Choose one of the available dates and times from a list (action: get_available_timeslots). No consideration of appointment duration.
+
+
+### Scenario 3
+***
+Customer wants to get the price estimation for a tattoo design they have in mind
+The bot needs to be able to 
+1) Give the user an approximate hourly estimate price chart
+2) Recommend getting a consulting appointment to get an accurate price estimate by the artist.
+
+***
    
 **Objectives**
 We know how important it is for the artist to build trust with each customer. 
