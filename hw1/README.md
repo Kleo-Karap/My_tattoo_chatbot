@@ -9,8 +9,8 @@
 
 RESTAURANTS-8K: It comprises conversations from a commercial restaurant booking system, and covers 5 slots essential for the booking task: date, time, people, first name, last name.
 
-DSTC8 datasets: Span-annotated datasets extracted from the Schema Guided Dialog Dataset (SGDD). The authors are interested in single-domain dialogue, so they chose
-datasets from four different domains of the original dataset (SGDD) : (1) bus and coach booking, (2) buying tickets for events, (3) property viewing and (4) renting cars. </p>
+DSTC8 datasets: Span-annotated datasets extracted from the Schema Guided Dialog Dataset (SGDD). The datasets contain single-domain dialogues, on the following 4 domains:
+(1) bus and coach booking, (2) buying tickets for events, (3) property viewing and (4) renting cars. </p>
 
 **Download location** <p>https://github.com/PolyAI-LDN/task-specific-datasets/tree/master/span_extraction</p>
 
