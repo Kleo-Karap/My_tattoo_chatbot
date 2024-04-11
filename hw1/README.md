@@ -67,5 +67,4 @@ Considering the first dataset, Restaurants-8k, it seems that due to the collecti
 Similarly the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book).
 Considering some limitations, the authors in the [original paper](https://arxiv.org/pdf/1909.05855.pdf) point out their inability to expose the set of all possible slot values for some slots, due to impracticality and the unlimited possible slot values.
 Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the datasets' limited slots help the evaluation process of the span-extranction model comply with real-life scenarios.
-
 </p>
