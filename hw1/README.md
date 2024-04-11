@@ -1,6 +1,6 @@
 # Dataset Info
 
-**Name** <p>Datasets used for experiments on the [SpanConveRT model](https://arxiv.org/pdf/2005.08866.pdf)
+**Name** <p>Datasets used for evaluation on the [SpanConveRT model](https://arxiv.org/pdf/2005.08866.pdf)
 1. RESTAURANTS-8K
 2. DSTC8
  </p>
