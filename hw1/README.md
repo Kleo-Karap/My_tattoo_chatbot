@@ -55,19 +55,17 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.Punctuation characters were omitted during word tokenization</p>
 
 # Comments on statistics
-Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn 
+Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn, since each human turn is independent from the others. 
   
 # Discussion
 <p>
 
-Considering the first dataset, Restaurants-8k, it seems that due to the collection process followed, the dataset maintains the naturalness through colloquial expressions and informal vocabulary.
+Considering the first dataset, Restaurants-8k, it seems that due to the collection process followed, the dataset maintains the naturalness through colloquial expressions and informal vocabulary, which contributes to the objectiveness of the evaluation of the SpanConveRT model.
 </p>
  
  <p> 
-The domains covered by the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book). Again these datasets cover only the user responses for the slot filling task.
-Dataset limitations:As mentioned in the paper of the original dataset, it does not expose the set of all possible slot values for some slots, due to impracticality and the unlimited possible slot values.
-Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the dataset approaches real-life scenarios.
+Similarly the DSTC8 datasets were chosen due to their high number of conversations and their large variety of slots (e.g. area of city to view an apartment, type of event to attend, time/date of coach to book).
+Considering some limitations, the authors in the original paper point out their inability to expose the set of all possible slot values for some slots, due to impracticality and the unlimited possible slot values.
+Second, the authors address the restrictions of real-word services, who can only be invoked with a limited number of slot combinations: e.g. restaurant reservation APIs do not let the user search for restaurants by date without specifying a location. In this sense, we can agree that the datasets' limited slots help the evaluation process of the span-extranction model comply with real-life scenarios.
 
-The datasets contain all necessary data for conducting the span extraction tasks, including : UserInput (text) and the labels (slot-value,start and endIndex)
-They claim that thanks to conversational pretraining the SpanConveRT model will be able to perform well on smaller datasets like ours.
 </p>
