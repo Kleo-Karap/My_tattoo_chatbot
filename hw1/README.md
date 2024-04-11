@@ -47,13 +47,7 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
 # Comments on statistics
-- All stats refer to human data
-- Since the datasets contain only the human turns, each row entry in the "userInput" column is independent from the others, so calculating mean and std of the turns is not applicable
-- sent_count= the count of sentences per row
-- word_count= the count of words per sentence
-- std_word_count=standard deviation of word length calculated based on the lengths of individual words per sentence
-- in all 5 datasets we observe consistencies in the mean and standard deviation scores for both the word and the sentence length.
-- the higher numbers in the total turn,sentence,word count and vocab_size for the restaurants dataset are due to the bigger size of this dataset
+Due to the design purpose of the datasets for evaluation of the span-extraction (slot-filling) model, there is no dialogue structure on the datasets. Each row in the 'text' part of the 'userInput' column is a human turn extracted from various conversations in a random mannner ('in the wild'). With this in mind, it is expected to observe low variation in the count of sentences per row, since we refer to single human replies/ turns, out of which specific slots should be filled, whereas it is also expected to observe high variation (std) in the count of words per turn 
   
 # Discussion
 <p>
