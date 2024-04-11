@@ -35,20 +35,21 @@ Concerning the dialogue collection procedure followed in the original dataset (S
 
 # Stats
 
-| domain     |total_turn_count|total_sent_count|mean_sent_length|std_sent_length|total_word_count|mean_word_length|std_word_length|vocab_size|vocab_size_no_stopwords| 
-|------------|----------------|---------------|---------------- |---------------|----------------|----------------|---------------|----------|------------------------|
-| restaurants| 8198           |8673           | 1.058           | 0.254         | 68637          | 7.914          |  2.354        |  4484    |       4373             |
-| buses      | 1133           |1434           | 1.266           | 0.494         | 11377          | 7.934          |  2.074        |  513     |   443                  |          
-| events     | 1498           |1906           | 1.272           | 0.502         | 14562          |7.64            |  2.174        |  786     |  706                   |           
-| homes      | 2064           |2636           | 1.277           | 0.509         | 19733          | 7.486          |  2.324        |  752     | 667                    |      
-| car_rental | 874            |1095           | 1.253           | 0.472         | 8873           | 8.103          |  1.98         |  585     |516                     |
-| SUM        | 13767          |15744          | 1.144           | 0.387         | 123182         | 7.824	         |  2.281	       |  5281    |   5161                 |
+| domain     |total_turn_count|total_sent_count|mean_sent_count  |std_sent_length|total_word_count|mean_word_length|std_word_length|vocab_size|vocab_size_no_stopwords| 
+|------------|----------------|--------------- |---------------- |---------------|----------------|----------------|---------------|----------|-----------------------|
+| restaurants| 8198           |8673            | 1.058           | 0.254         | 68637          | 7.914          |  2.354        |  4484    |       4373            |
+| buses      | 1133           |1434            | 1.266           | 0.494         | 11377          | 7.934          |  2.074        |  513     |   443                 |          
+| events     | 1498           |1906            | 1.272           | 0.502         | 14562          |7.64            |  2.174        |  786     |  706                  |           
+| homes      | 2064           |2636            | 1.277           | 0.509         | 19733          | 7.486          |  2.324        |  752     | 667                   |      
+| car_rental | 874            |1095            | 1.253           | 0.472         | 8873           | 8.103          |  1.98         |  585     |516                    |
+| SUM        | 13767          |15744           | 1.144           | 0.387         | 123182         | 7.824	         |  2.281	       |  5281    |   5161                |
 
 <p>For the stats above each utterance was split into sentences and tokens for the calculations.</p>
 
 # Comments on statistics
+- All stats refer to human data
 - Since the datasets contain only the human turns, each row entry in the "userInput" column is independent from the others, so calculating mean and std of the turns is not applicable
-- sent_length= the count of sentences per row
+- sent_count= the count of sentences per row
 - word_length= the count of words per sentence
 - std_word_lenth=standard deviation of word length calculated based on the lengths of individual words per sentence
 - in all 5 datasets we observe consistencies in the mean and standard deviation scores for both the word and the sentence length.
