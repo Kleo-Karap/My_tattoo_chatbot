@@ -70,4 +70,5 @@ Ideal functionalities:
    
 **Current issues** 
 
-![image](https://github.com/Kleo-Karap/My_chatbot/assets/117507917/fe2bf29e-34a5-4dc7-b49c-f37991004d15)
+https://github.com/RasaHQ/HandsOn_with_rasa/blob/main/data/rules.yml
+Connect Rasa bot with Google calendar : https://www.youtube.com/watch?v=kA3nB9ojZP0&t=368s&ab_channel=Rasa
