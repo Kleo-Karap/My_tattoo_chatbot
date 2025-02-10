@@ -9,11 +9,13 @@ Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tat
 ***
 
 **Problem Statement**
-*Appointment booking?*
+
+*Appointment booking*
 <p>Scheduling a tattoo apointment vs schedulling a routine doctor's appointment are far from similar!
 In order to find the right slot for a tattoo apointment, following things are considered :
-   1) size in cm (e.g. imagine the duration for a full arm tattoo) 
-   2)complexity (e.g. if it is a portrait tattoo, or 3D or if it contains colour)
+
+   1. size in cm (e.g. imagine the duration for a full arm tattoo)
+   2. complexity (e.g. if it is a portrait tattoo, or 3D or if it contains colour)
 
    After taking these parameters into consideration, the artist can estimate the appointment duration and find an available slot in their program. For a customer that knows the design and the spot to be done, getting an appointment is the last step, so this is the target audience for the appointment-scheduling functionaliyty of the Persa_Bot. For customers that have partially made their decision, (i.e. they know the design, but they don't know the spot, or they know the spot but they don't know the design, or they don't know either), here are the two alternatives : 
    1) Book a consulting appointment with the artist (this one should have a max. standard duration) or
