@@ -9,13 +9,7 @@ Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tat
 ***
 
 **Problem Statement**
-
-*We know the struggle of getting a unique tattoo!*
-<p>Most of our beloved customers come to us with tattoo designs taken from images from Google or Pinterest or they ask for variables or even duplicates from our designs on Instagram. 
-**We want to take customer experience to the next level**  by harnessing the benefits of **AI** and especially the perks of automated image generation.  
-Inspired by platforms like [Blackink.ai](https://blackink.ai/) and [Tattosai](https://www.tattoosai.com/) we think that linking our chatbot with a platform that generates unique tattoos is an ideal asset not only for customer satisfaction, but also for the continuous enrichment of the artist's booklet. Because in art there are no limits! </p>
-
-*And what about appointment booking?*
+*Appointment booking?*
 <p>Scheduling a tattoo apointment vs schedulling a routine doctor's appointment are far from similar!
 In order to find the right slot for a tattoo apointment, following things are considered :
    1) size in cm (e.g. imagine the duration for a full arm tattoo) 
@@ -25,9 +19,7 @@ In order to find the right slot for a tattoo apointment, following things are co
    1) Book a consulting appointment with the artist (this one should have a max. standard duration) or
    2) Search in the tattoo generator platform for inspiration. </p>
 
-*Price estimation*
-<p> A common intent of our customers is that they have a tattoo in mind and they reach out to us about the costing. Again the price estimation is strongly correlated with its size, its complexity and accordingly the time spent for it.
-So having a bot give an approximate price reply is saving Persa a lot of time in standard chat interactions. Also the price estimation function saves Persa from negotiating with customers not belonigng to her target group of customers. </p>
+
 
 ***
 Persa is a reknown solo artist in Thessaloniki with high-demand. She has customers coming all over Europe to visit her for her artwork! 
@@ -74,4 +66,10 @@ https://github.com/RasaHQ/HandsOn_with_rasa/blob/main/data/rules.yml
 Connect Rasa bot with Google calendar : https://www.youtube.com/watch?v=kA3nB9ojZP0&t=368s&ab_channel=Rasa
 
 **Future work**
-We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.
+
+*Instagram integration*
+<p> We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.</p>
+
+*Price estimation*
+<p> A common intent of our customers is that they have a tattoo in mind and they reach out to us about the costing. Again the price estimation is strongly correlated with its size, its complexity and accordingly the time spent for it.
+So having a bot give an approximate price reply is saving Persa a lot of time in standard chat interactions. Also the price estimation function saves Persa from negotiating with customers not belonigng to her target group of customers. </p>
