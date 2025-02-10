@@ -13,10 +13,14 @@ Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tat
 *Appointment booking*
 <p> Customer is asked to submit some information for the tattoo appointment
 
-   1. tattoo design
-   2. coloured (y/n)
-   3. body spot (arm, leg, back, shoulder)
-
+   1. Full Name
+   2. E-mail
+   3. Phone
+   4. Artist
+   5. Concept
+   6. Size
+   7. Placement 
+   8. coloured (y/n)
 
 ### Scenario 1
 ***
@@ -26,10 +30,9 @@ The bot needs to be able to
 
 ### Scenario 2
 ***
-Customer wants to book an appointment ((fully_aware (ideal)-user).
+Customer wants to book an appointment
 The bot needs to be able to 
-1) Save customer's data in Airtable
-
+1) Save customer's data in Airtable (Full Name, E-mail, Phone, Artist, Concept, Size, Placement,coloured (y/n))
 
    
 **Future Objectives**
