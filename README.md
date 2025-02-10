@@ -5,7 +5,7 @@
 # Persa_Bot Your guide in the journey of getting your dream tattoo by Persa Tattoo studio :)
 **Domain**
 ***
-Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tattoo artist-industry .We ideally what to integrate this functionality in our Instagram account chat, since this is our main source for lead generation.
+Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tattoo artist-industry.
 ***
 
 **Problem Statement**
@@ -72,3 +72,6 @@ Ideal functionalities:
 
 https://github.com/RasaHQ/HandsOn_with_rasa/blob/main/data/rules.yml
 Connect Rasa bot with Google calendar : https://www.youtube.com/watch?v=kA3nB9ojZP0&t=368s&ab_channel=Rasa
+
+**Future work**
+We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.
