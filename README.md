@@ -11,22 +11,12 @@ Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tat
 **Problem Statement**
 
 *Appointment booking*
-<p>Scheduling a tattoo apointment vs schedulling a routine doctor's appointment are far from similar!
-In order to find the right slot for a tattoo apointment, following things are considered :
+<p> Customer is asked to submit some information for the tattoo appointment
 
-   1. size in cm (e.g. imagine the duration for a full arm tattoo)
-   2. complexity (e.g. if it is a portrait tattoo, or 3D or if it contains colour)
+   1. tattoo design
+   2. coloured (y/n)
+   3. body spot (arm, leg, back, shoulder)
 
-   After taking these parameters into consideration, the artist can estimate the appointment duration and find an available slot in their program. For a customer that knows the design and the spot to be done, getting an appointment is the last step, so this is the target audience for the appointment-scheduling functionaliyty of the Persa_Bot. For customers that have partially made their decision, (i.e. they know the design, but they don't know the spot, or they know the spot but they don't know the design, or they don't know either), here are the two alternatives : 
-   1) Book a consulting appointment with the artist (this one should have a max. standard duration) or
-   2) Search in the tattoo generator platform for inspiration. </p>
-
-
-
-***
-Persa is a reknown solo artist in Thessaloniki with high-demand. She has customers coming all over Europe to visit her for her artwork! 
-So outsourcing the process of booking appointments tailored on her agenda  via the use of a chatbot, will help her focus on what she does the best.
-***
 
 ### Scenario 1
 ***
@@ -34,13 +24,11 @@ Customer wants to find a tattoo idea.
 The bot needs to be able to 
 1) Redirect to Persa's Instagram page
 
-
-
 ### Scenario 2
 ***
 Customer wants to book an appointment ((fully_aware (ideal)-user).
 The bot needs to be able to 
-1) Choose one of the available dates and times from a list (action: get_available_timeslots). No consideration of appointment duration.
+1) Save customer's data in Airtable
 
 
    
