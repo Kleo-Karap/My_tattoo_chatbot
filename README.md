@@ -41,35 +41,21 @@ The bot needs to be able to
 1) Choose one of the available dates and times from a list (action: get_available_timeslots). No consideration of appointment duration.
 
 
-### Scenario 3
-***
-Customer wants to get the price estimation for a tattoo design they have in mind
-The bot needs to be able to 
-1) Give the user an approximate hourly estimate price chart
-2) Recommend getting a consulting appointment to get an accurate price estimate by the artist.
-
-***
    
-**Objectives**
+**Future Objectives**
 We know how important it is for the artist to build trust with each customer. 
-So we don't want ot automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
+So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
 Ideal functionalities: 
-1. Tattoo-generation: Connect the chatbot with a platform like : https://blackink.ai/. This site requires the user to create an account, but we would like the user of the chat to have direct access to the pltforms interface to be able to generate their tattoo straightaway.
-2. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar.
-3. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
-4. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
-5. Geolocation: Customer asks studio's location: Bot responds with a pin to Google maps from the user's current location to the studio
+1. Instagram Integration: We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.
+2. Tattoo-generation: Connect the chatbot with a platform like : https://blackink.ai/. This site requires the user to create an account, but we would like the user of the chat to have direct access to the pltforms interface to be able to generate their tattoo straightaway.
+3. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar.
+4. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
+5. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
+6. Geolocation: Customer asks studio's location: Bot responds with a pin to Google maps from the user's current location to the studio
    
 **Current issues** 
 
 https://github.com/RasaHQ/HandsOn_with_rasa/blob/main/data/rules.yml
 Connect Rasa bot with Google calendar : https://www.youtube.com/watch?v=kA3nB9ojZP0&t=368s&ab_channel=Rasa
 
-**Future work**
 
-*Instagram integration*
-<p> We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.</p>
-
-*Price estimation*
-<p> A common intent of our customers is that they have a tattoo in mind and they reach out to us about the costing. Again the price estimation is strongly correlated with its size, its complexity and accordingly the time spent for it.
-So having a bot give an approximate price reply is saving Persa a lot of time in standard chat interactions. Also the price estimation function saves Persa from negotiating with customers not belonigng to her target group of customers. </p>
