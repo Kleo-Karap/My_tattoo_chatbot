@@ -5,40 +5,39 @@
 # Persa_Bot Your guide in the journey of getting your dream tattoo by Persa Tattoo studio :)
 **Domain**
 ***
-Persa_Bot is an appointment booking- and inspiration giving- chatbot for the Tattoo artist-industry.
+Persa_Bot is a tattoo information tracker assistant for the tattoo artist industry.
 ***
 
 **Problem Statement**
 
-*Appointment booking*
-<p> Customer is asked to submit some information for the tattoo appointment
+*Tattoo info tracking*
+<p> Customer is asked to submit information about their tattoo idea. 
 
    1. Full Name
    2. E-mail
-   3. Phone
-   4. Artist
+   3. Artist name
    5. Concept
    6. Size
    7. Placement 
-   8. coloured (y/n)
 
 ### Scenario 1
 ***
 Customer wants to find a tattoo idea.
-The bot needs to be able to 
+The bot  is able to 
 1) Redirect to Persa's Instagram page
 
 ### Scenario 2
 ***
 Customer wants to book an appointment
-The bot needs to be able to 
-1) Save customer's data in Airtable (Full Name, E-mail, Phone, Artist, Concept, Size, Placement,coloured (y/n))
+The bot 
+1) Saves customer's data in Airtable (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
 
    
 **Future Objectives**
 We know how important it is for the artist to build trust with each customer. 
 So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
-Ideal functionalities: 
+
+**Ideal functionalities**
 1. Instagram Integration: We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.
 2. Tattoo-generation: Connect the chatbot with a platform like : https://blackink.ai/. This site requires the user to create an account, but we would like the user of the chat to have direct access to the pltforms interface to be able to generate their tattoo straightaway.
 3. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar.
@@ -48,7 +47,6 @@ Ideal functionalities:
    
 **Current issues** 
 
-https://github.com/RasaHQ/HandsOn_with_rasa/blob/main/data/rules.yml
-Connect Rasa bot with Google calendar : https://www.youtube.com/watch?v=kA3nB9ojZP0&t=368s&ab_channel=Rasa
+
 
 
