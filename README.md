@@ -1,8 +1,7 @@
-![image](https://github.com/Kleo-Karap/My_chatbot/assets/117507917/1d894c6c-5005-49e6-b913-0ad212eaf853)
-![image](https://github.com/Kleo-Karap/My_chatbot/assets/117507917/0978bd05-0ebc-4808-a0a9-9c6bf2f5ab41)
-
-
 # Persa_Bot Your guide in the journey of getting your dream tattoo by Persa Tattoo studio :)
+![image](https://github.com/Kleo-Karap/My_chatbot/assets/117507917/1d894c6c-5005-49e6-b913-0ad212eaf853)
+![image](https://github.com/user-attachments/assets/e66344d6-dea1-454b-8eac-132bfdb067da)
+
 **Domain**
 ***
 Persa_Bot is a tattoo information tracker assistant for the tattoo artist industry.
@@ -30,7 +29,7 @@ The bot  is able to
 ***
 Customer wants to book an appointment
 The bot 
-1) Saves customer's data in Airtable (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
+1) Saves customer's data in [Airtable](https://airtable.com/) (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
 
    
 **Future Objectives**
