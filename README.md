@@ -44,9 +44,24 @@ So we don't want to automate the whole appointment booking process. Only the par
 4. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
 5. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
 6. Geolocation: Customer asks studio's location: Bot responds with a pin to Google maps from the user's current location to the studio
-   
+
+
 **Current issues** 
 
+# Getting started
+```
+pip install rasa
+```
+Split terminal in two, first run:
+
+```
+rasa run actions
+```
+
+then run:
+```
+rasa shell
+```
 
 
 
