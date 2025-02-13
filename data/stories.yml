@@ -2,69 +2,6 @@ version: "3.1"
 
 stories:
 
-- story: find tattoo
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: need_inspiration
-  - action: utter_see
-  - action: utter_instagram
-  - intent: affirm
-  - action: utter_further_assist
-  - intent: deny
-  - action: utter_great
-
-
-- story: book_appointment
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: book_appointment
-  - action: utter_full_decision
-  - intent: affirm
-  - intent: inquire_slots
-  - action: action_get_available_time_slots
-  - action: utter_does_anyone_fit
-  - intent: affirm
-  - action: utter_specify_day
-  - intent: tell_day
-  - action: action_receive_day
-  - action: utter_specify_date
-  - intent: tell_date
-  - action: action_receive_date
-  - action: utter_specify_time
-  - intent: tell_time
-  - action: action_receive_time
-  - action: utter_follow-up_questions
-  - action: utter_ask_name
-  - intent: tell_name
-  - action: action_receive_name
-  - action: utter_first_time
-  - intent: affirm
-  - action: utter_ask_number
-  - intent: phone_number
-  - action: action_say_name
-  - action: action_confirm_appointment
-  - action: utter_verify_booking_details
-  - intent: affirm
-  - action: utter_further_assist
-  - intent: deny
-  - action: utter_see_you_soon
-
-  
-- story: price_estimate
-  steps:
-  - intent: greet
-  - intent: price_estimate
-  - action: utter_pricelist
-  - action: utter_first_time
-  - intent: affirm
-  - action: utter_consult_appointment
-  - intent: deny
-  - action: utter_further_assist
-  - intent: deny
-  - action: utter_great
-
 - story: happy path
   steps:
   - intent: greet
@@ -81,3 +18,149 @@ stories:
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: survey_happy_path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_tattoo_question
+  - action: tattoo_info_form
+  - active_loop: tattoo_info_form
+  - slot_was_set:
+      - requested_slot: full_name
+  - slot_was_set:
+    - full_name: Kleopatra Karapanagiotou
+  - slot_was_set:
+    - requested_slot: e_mail
+  - slot_was_set:
+    - e_mail: kleopatrakapa22@gmail.com
+  - slot_was_set:
+    - requested_slot: artist_name
+  - slot_was_set:
+    - artist_name: Persa
+  - slot_was_set:
+    - requested_slot: tattoo_style
+  - slot_was_set:
+    - tattoo_style: minimal
+  - slot_was_set:
+    - requested_slot: tattoo_size
+  - slot_was_set:
+    - tattoo_size: small
+  - slot_was_set:
+    - requested_slot: body_placement
+  - slot_was_set:
+    - body_placement: neck
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: action_tattoo_info_form                                                                    #utter_tattoo_info_slots
+  - intent: thankyou
+  - action: utter_goodbye
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- story: ask tattoo idea
+  steps:
+  - intent: ask_tattoo_idea
+  - action: utter_tattoo_idea
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_tattoo_question
+  - action: tattoo_info_form
+  - active_loop: tattoo_info_form
+  - slot_was_set:
+    - requested_slot: full_name
+  - intent: inform
+    entities:
+    - full_name: Kleopatra Karapanagiotou
+  - slot_was_set:
+    - full_name: Kleopatra Karapanagiotou
+  - action: tattoo_info_form
+  - slot_was_set:
+    - full_name: Kleopatra Karapanagiotou
+  - slot_was_set:
+    - requested_slot: e_mail
+  - intent: inform
+    entities:
+    - e_mail: kleopatrakappa22@gmail.com
+  - slot_was_set:
+    - e_mail: kleopatrakappa22@gmail.com
+  - action: tattoo_info_form
+  - slot_was_set:
+    - e_mail: kleopatrakappa22@gmail.com
+  - slot_was_set:
+    - requested_slot: artist_name
+  - intent: inform
+    entities:
+    - artist_name: Persa
+  - slot_was_set:
+    - artist_name: Persa
+  - action: tattoo_info_form
+  - slot_was_set:
+    - artist_name: Persa
+  - slot_was_set:
+    - requested_slot: tattoo_style
+  - intent: inform
+    entities:
+    - tattoo_style: minimal
+  - slot_was_set:
+    - tattoo_style: minimal
+  - action: tattoo_info_form
+  - slot_was_set:
+    - tattoo_style: minimal
+  - slot_was_set:
+    - requested_slot: tattoo_size
+  - intent: inform
+    entities:
+    - tattoo_size: small
+  - slot_was_set:
+    - tattoo_size: small
+  - action: tattoo_info_form
+  - slot_was_set:
+    - tattoo_size: small
+  - slot_was_set:
+    - requested_slot: body_placement
+  - intent: inform
+    entities:
+    - body_placement: neck
+  - slot_was_set:
+    - body_placement: neck
+  - action: tattoo_info_form
+  - slot_was_set:
+    - body_placement: neck
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: action_tattoo_info_form
+  - intent: thankyou
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye

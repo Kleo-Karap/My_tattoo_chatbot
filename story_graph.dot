@@ -1,0 +1,31 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class=active, fontsize=12, label=action_session_start];
+2 [class=active, fontsize=12, label=utter_greet];
+3 [class=active, fontsize=12, label=tattoo_info_form];
+10 [class=active, fontsize=12, label=utter_submit];
+11 [class=active, fontsize=12, label=action_tattoo_info_form];
+12 [class=active, fontsize=12, label=utter_goodbye];
+14 [class="intent dashed active", label="  ?  ", shape=rect];
+15 [class="intent active", fillcolor=lightblue, label="/greet", shape=rect, style=filled];
+16 [class="intent active", fillcolor=lightblue, label="/ask_tattoo_question", shape=rect, style=filled];
+17 [class="intent active", fillcolor=lightblue, label="/inform", shape=rect, style=filled];
+18 [class="intent active", fillcolor=lightblue, label="/thankyou", shape=rect, style=filled];
+19 [class="intent active", fillcolor=lightblue, label="/goodbye", shape=rect, style=filled];
+0 -> "-1"  [class="", key=NONE, label=""];
+0 -> 1  [class=active, key=NONE, label=""];
+1 -> 15  [class=active, key=0];
+2 -> 16  [class=active, key=0];
+3 -> 10  [class=active, key=NONE, label=""];
+3 -> 17  [class=active, key=0];
+10 -> 11  [class=active, key=NONE, label=""];
+11 -> 18  [class=active, key=0];
+12 -> 14  [class=active, key=NONE, label=""];
+12 -> 19  [class=active, key=0];
+15 -> 2  [class=active, key=0];
+16 -> 3  [class=active, key=0];
+17 -> 3  [class=active, key=0];
+18 -> 12  [class=active, key=0];
+19 -> 12  [class=active, key=0];
+}

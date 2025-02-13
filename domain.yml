@@ -1,133 +1,111 @@
-version: "3.1"
-
-config:
-  store_entities_as_slots: true
-
+version: '3.1'
 intents:
-- greet
-- tell_name
 - affirm
+- ask_tattoo_idea
+- ask_tattoo_question
+- bot_challenge
 - deny
+- goodbye
+- greet
+- inform
 - mood_great
 - mood_unhappy
-- need_inspiration
-- inquire_slots
-- book_appointment
-- tell_day
-- tell_date
-- tell_time
-- phone_number
-- follow_up_visit
-- price_estimate
-
-
-entities: []
+- tattoo_info_form
+- thankyou
+entities:
+- tattoo_size
+- tattoo_style
+- artist_name
+- full_name
+- e_mail
+- body_placement
 slots:
-  name:
+  full_name:
     type: text
+    influence_conversation: true
     mappings:
     - type: from_entity
-      entity: entity_name
-  day:
-    type: text  
-    mappings:
-    - type: from_entity
-      entity: entity_name
-  date:
+      entity: full_name
+  e_mail:
     type: text
+    influence_conversation: true
     mappings:
     - type: from_entity
-      entity: entity_name
-  time:
+      entity: e_mail
+  artist_name:
     type: text
+    influence_conversation: true
     mappings:
     - type: from_entity
-      entity: entity_name
-
+      entity: artist_name
+  tattoo_style:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tattoo_style
+  tattoo_size:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: tattoo_size
+  body_placement:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: body_placement
+forms:
+  tattoo_info_form:
+    required_slots:
+    - full_name
+    - e_mail
+    - artist_name
+    - tattoo_style
+    - tattoo_size
+    - body_placement
 responses:
   utter_greet:
-  - text: "Hey! I'm PersaBot! Your friend in the journey of getting your dream tattoo by Persa Tattoo studio :) How can I help you today?"
-
+  - text: Hi! I'm PersaBot, your guide towards getting your dream tattoo by Persa Tattoo studio! What can I do for you today?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
-  utter_instagram:
-  - text: "As a starting point I would suggest checking our popular designs in our [Instagram page](https://www.instagram.com/persa_tattoo/)"
-    
-
-  utter_see:
-  - text: "I see. It's great to hear that!"
-
-  utter_full_decision:
-  - text: "Great to hear that! Have you decided the design and the exact body spot?"
-
-  utter_consult_appointment:
-  - text: "You can also book a consulting appointment (free of charge) with Persa to discuss on the design you have in mind and get a more accurate price estimate. Would you like to book a consulting appointment?"
-
-  utter_does_anyone_fit:
-  - text: "Does any of this fit?"
-
-  utter_specify_day:
-  - text: "Please specify the day"
-
-  utter_specify_date:
-  - text: "Please specify the date"
-
-  utter_specify_time:
-  - text: "Please specify the time"
-
-  utter_follow-up_questions:
-  - text: "For successful booking of the appointment we would like you to answer the following questions: "
-
-  utter_first_time:
-  - text: Is this your first tattoo by Persa?
-    
- # utter_follow_up:
- # - text: Is this a follow_up visit for an ongoing tattoo?
-
-  utter_ask_name:
-  - text: Can I get your name please?
-
-  utter_ask_number:
-  - text: What is your phone number?
-
-#  utter_location:
-#  - text: The studio is located in Konstantinoupoleos 132 (54644) in Thessaloniki
-
-  utter_pricelist:
-  - text: "To get a price approximation for your tattoo, you can refer to our hourly estimate chart:"
-    image: "https://storage.googleapis.com/msgsndr/rG91PG0PfPxspxHXNgmW/media/63d4b37d26d6cdd96cf80e10.png"
-
-
-  utter_verify_booking_details: 
-  - text: "Are we good to go?"
-
-  utter_further_assist:
-  - text: "Cool! Is there something else you'd like me to help you with?" 
-  
-  utter_great:
-  - text: "It was great chating with you! And don't forget! Persa can always take your tattoo design to the next level!"
-
-  utter_see_you_soon:
-  - text: "It was great chating with you! See you soon!"
-
-
-actions: 
-- action_get_available_time_slots
-- action_say_name
-- action_receive_name
-- action_confirm_appointment
-- action_receive_time
-- action_receive_day
-- action_receive_date
-
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_tattoo_idea:
+  - text: You can refer to our [Instagram page](https://www.instagram.com/persa_tattoo/) to get an overview of our recent designs or you can get some unique tattoo designs from AI platforms like Blackink or TattoosAI that generate custom tattoo ideas based on your design preferences
+  utter_ask_full_name:
+  - text: What's your full name?
+  utter_ask_e_mail:
+  - text: Your e-mail?
+  utter_ask_artist_name:
+  - text: Who's your prefereable artist?
+  utter_ask_tattoo_style:
+  - text: Please specify the tattoo style you have in mind. Choose between (geometric, realistic, anime, minimal, tribal, japanese, old-school)
+  utter_ask_tattoo_size:
+  - text: Approximate tattoo size (x-small,small,medium,large,larger than above)
+  utter_ask_body_placement:
+  - text: Please specify the body part (arm, leg, neck, back, angle)
+  utter_no_worries:
+  - text: no worries
+  utter_submit:
+  - text: Your information have been recorded
+  utter_tattoo_info_slots:
+  - text: Got it {full_name}! {artist_name} will soon reach out to you via e-mail on {e_mail} with more information about the {tattoo_size}, {body_placement}-spotted, {tattoo_style} tattoo design you have in mind
+actions:
+- utter_greet
+- action_tattoo_info_form
+- utter_goodbye
+- utter_submit
+- utter_tattoo_info_slots
+- validate_tattoo_info_form
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

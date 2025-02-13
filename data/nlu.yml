@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,30 +15,40 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
-#- intent: goodbye
-#  examples: |
-#    - cu
-#    - good by
-#    - cee you later
-#    - good night
-#    - bye
-#    - goodbye
-#    - have a nice day
-#    - see you around
-#    - bye bye
-#    - see you later
-
+- intent: thankyou
+  examples: |
+    - thanks
+    - thank you
+    - danke
+    - thank's a lot
+    - thank you for that
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
 - intent: affirm
   examples: |
     - yes
     - y
-    - indeed
     - of course
     - that sounds good
-    - correct
-    - cool
-
+    - sounds good
+    - no problem
+    - ok
+    - fine by me
+    - yup
+    - alright
+    - no worries
+    - sure
+    - why not
 - intent: deny
   examples: |
     - no
@@ -49,7 +58,11 @@ nlu:
     - don't like that
     - no way
     - not really
-
+    - i wouldn't like that
+    - i prefer not to
+    - no, i disagree
+    - better not
+    - no thanks
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +79,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,103 +95,60 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-- intent: book_appointment
+- intent: bot_challenge
   examples: |
-    - I would like to book an appointment for a tattoo
-    - I would like to book an appointment
-    
-- intent: inquire_slots
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: ask_tattoo_idea
   examples: |
-    - What are the available time slots for this week?
-    - Are there any available time slots for this week?
-
-
-- intent: follow_up_visit
+    - I need some tattoo inspiration
+    - I need inspiration for a tattoo
+    - i want to find tattoo ideas
+    - i'm looking for tattoo ideas
+    - any tattoo ideas?
+    - any idea for a tattoo?
+- intent: ask_tattoo_question
   examples: |
-    - This is a follow_up visit for an ongoing tattoo
-    - This is the second session for my tattoo
-
-#- intent: ask_location
-  #examples: |
-#    - Where is the tattoo studio?
-#    - Where can I find the Persa tattoo studio?
-#    - Where exactly is the Persa tattoo studio located?
-
-- intent: need_inspiration
+    - i have some questions about a tattoo design
+    - i want to ask the price of a tattoo design
+    - i want to have a price approximation for a tattoo
+    - i want more information about a tattoo that i have in mind
+    - i want to ask Persa for a tattoo design
+    - i need to get consulting for a tattoo
+- intent: inform
   examples: |
-    - I need inspiration for a new tattoo
-    - I'm looking for tattoo ideas
-    - I'm looking for a catalogue of your artwork
-    
-- intent: phone_number
-  examples: |
-    - 6949094806]
-    - +306949094806
-    - +30 6949094806
-
-- intent: tell_name
-  examples: |
-    - Kleopatra
-    - Maria
-    - Giorgos
-    - Marios
-
-- intent: tell_day
-  examples: |
-    - Monday
-    - monday
-    - Tuesday
-    - tuesday
-    - Wednesday
-    - wednesday
-    - Thursday
-    - thursday
-    - Friday
-    - friday
-    - Saturday
-    - saturday
-    - Sunday
-    - sunday
-
-- intent: tell_date
-  examples: |
-    - 13/11/2023
-    - 14/11/2023
-    - 15/11/2023
-    - 16/11/2023
-    - 17/11/2023
-    - 18/11/2023
-
-- intent: tell_time
-  examples: |
-    - 10:00 AM
-    - 10:00 a.m.
-    - 11:00 AM
-    - 11:00 a.m.
-    - 12:00 PM
-    - 12:00 p.m.
-    - 1:00 PM
-    - 1:00 p.m.
-    - 2:00 PM
-    - 2:00 p.m.
-    - 3:00 PM
-    - 3:00 p.m.
-    - 4:00 PM
-    - 4:00 p.m.
-    - 5:00 PM
-    - 5:00 p.m.
-    - 6:00 PM
-    - 6:00 p.m.
-    - 7:00 PM
-    - 7:00 p.m.
-    - 8:00 PM
-    - 8:00 p.m.
-
-- intent: price_estimate
-  examples: |
-    - i want to know the price for a tattoo
-    - i would like to ask for the price of a tattoo
-    - i want to know the price for a specific tattoo
-    - hi
-    - how much for a full arm tattoo?
-    
+    - [John Doe](full_name)
+    - [Kleopatra Karapanagiotou](full_name)
+    - [Maria Papadopoulou](full_name)
+    - [Giannis Papadopoulos](full_name)
+    - [kleopatrakapa22@gmail.com](e_mail)
+    - [kleopatrakappa22@gmail.com](e_mail)
+    - [asimakiskarap@gmail.com](e_mail)
+    - [Persa](artist_name)
+    - [Zoi](artist_name)
+    - [Zoe](artist_name)
+    - [tribal](tattoo_style)
+    - [geometric](tattoo_style)
+    - [japanese](tattoo_style)
+    - [anime](tattoo_style)
+    - [minimal](tattoo_style)
+    - [realistic](tattoo_style)
+    - [old-school](tattoo_style)
+    - [x-small](tattoo_size)
+    - [small](tattoo_size)
+    - [medium](tattoo_size)
+    - [large](tattoo_size)
+    - [larger than above](tattoo_size)
+    - [arm](body_placement)
+    - [leg](body_placement)
+    - [hand](body_placement)
+    - [ankle](body_placement)
+    - [neck](body_placement)
+    - [Kleopatra Karapanagiotou](full_name)
+    - [kleopatrakappa22@gmail.com](e_mail)
+    - [Persa](artist_name)
+    - [minimal](tattoo_style)
+    - [small](tattoo_size)
+    - [neck](body_placement)
