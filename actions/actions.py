@@ -27,9 +27,9 @@ ALLOWED_TATTOO_STYLES = ["tribal", "geometric", "japanese", "anime", "minimal","
 #ALLOWED_ARTIST_NAMES=["Persa", "Zoe"]
 ALLOWED_BODY_PLACEMENTS= ["arm", "leg", "neck","back", "ankle", "shoulder", "back"]
 
-airtable_api_key= os.getenv("AIRTABLE_API_KEY") #"patDUbmxv5SzlZ4uO.65436ccc0154bb7e0b2004f13fc3867b9636f882f867b4f36212005850e3af0e"
-base_id= os.getenv("BASE_ID")                   #"appkHyLJUgNtS3bGJ"
-table_name= os.getenv("TABLE_NAME")             #"tblHUOMXM1tEcjk2e"
+airtable_api_key= os.getenv("AIRTABLE_API_KEY") 
+base_id= os.getenv("BASE_ID")                   
+table_name= os.getenv("TABLE_NAME")             
 
 def create_tattoo_log(full_name, e_mail, artist_name, tattoo_style, tattoo_size, body_placement):
     request_url=f"https://api.airtable.com/v0/{base_id}/{table_name}"
