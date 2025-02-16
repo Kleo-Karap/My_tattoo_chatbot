@@ -28,8 +28,7 @@ The bot  is able to
 ### Scenario 2
 ***
 Customer wants to book an appointment
-The bot 
-1) Saves customer's data in [Airtable](https://airtable.com/) (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
+- The bot saves customer's data in [Airtable](https://airtable.com/) (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
 
    
 **Future Objectives**
