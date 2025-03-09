@@ -21,14 +21,16 @@ Persa_Bot is a tattoo information tracker assistant for the tattoo artist indust
 
 ### Scenario 1
 ***
-Customer wants to find a tattoo idea.
-The bot  is able to 
-1) Redirect to Persa's Instagram page
+- Customer wants to find a tattoo idea.
+- Bot redirects to Persa's Instagram page
 
 ### Scenario 2
 ***
-Customer wants to book an appointment
-- The bot saves customer's data in [Airtable](https://airtable.com/) (Full Name, E-mail, Artist, Concept, Size, Placement) through an external API key.
+Customer wants information about a specific tattoo design
+- A Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
+- The bot saves user's given info in [Airtable](https://airtable.com/) through an external API key.
+- User says thank you
+- Bot replies Bye
 
    
 **Future Objectives**
@@ -37,7 +39,7 @@ So we don't want to automate the whole appointment booking process. Only the par
 
 **Ideal functionalities**
 1. Instagram Integration: We ideally what to integrate this chatbot in our Instagram account chat, since this is our main source for lead generation.
-2. Tattoo-generation: Connect the chatbot with a platform like : https://blackink.ai/. This site requires the user to create an account, but we would like the user of the chat to have direct access to the pltforms interface to be able to generate their tattoo straightaway.
+2. Tattoo-generation: OpenAI function calling: https://platform.openai.com/docs/guides/images
 3. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar.
 4. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
 5. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
