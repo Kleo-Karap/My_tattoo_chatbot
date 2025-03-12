@@ -33,9 +33,8 @@ Customer wants information about a specific tattoo design
 - Bot replies Bye
 
 ### Scenario 3 
-Customer wants information about a specific tattoo design
-- A Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
-- User refuses to provide their personal information (Full Name or E-mail)
+Customer books consulting appointment (fixed duration 1 hour)
+
    
 **Future Objectives**
 We know how important it is for the artist to build trust with each customer. 
@@ -49,7 +48,7 @@ So we don't want to automate the whole appointment booking process. Only the par
 
 
 **Current issues** 
-
+Appointment booking works on the side of the user, but no access to the tattoo artist's schedule is given to ensure schedule compatibility
 
 # Getting started
 ```
