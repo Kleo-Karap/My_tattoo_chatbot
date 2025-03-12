@@ -44,9 +44,8 @@ So we don't want to automate the whole appointment booking process. Only the par
 **Ideal functionalities**
 1. Instagram Integration: We ideally what to integrate this chatbot with our Instagram as a messaging channel, since this is our main source for lead generation.
 2. Tattoo-generation: OpenAI function calling: https://platform.openai.com/docs/guides/images
-3. Book tattoo appointment: Based on the tattoo design, give the customer an appointment duration estimate, and then provide available timeslots starting from current week based on Persa's Google calendar. : Rasa resource: https://rasa.com/blog/connect-your-assistant-with-google-calendar/
-4. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes).
-5. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
+3. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes). Provide available timeslots starting from current week based on Persa's Google calendar. : Rasa resource: https://rasa.com/blog/connect-your-assistant-with-google-calendar/
+4. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
 
 
 **Current issues** 
