@@ -25,7 +25,7 @@ Customer wants information about a specific tattoo design
 - Bot replies Bye
 
 ### Scenario 3 
-Customer books consulting appointment (fixed duration 1 hour)
+Customer books consulting appointment (fixed duration 1 hour)- appointment is tracked on user's Google calendar
 
 
 **Ideal functionalities**
