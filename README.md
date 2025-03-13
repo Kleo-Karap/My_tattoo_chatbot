@@ -20,7 +20,7 @@ So we don't want to automate the whole appointment booking process. Only the par
 ***
 Customer wants information about a specific tattoo design
 - A Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
-- The bot saves user's given info in [Airtable](https://airtable.com/) through an external API key.
+- The bot saves user's given info in [Airtable](https://airtable.com/) sheet through an external API key.
 - User says thank you
 - Bot replies Bye
 
