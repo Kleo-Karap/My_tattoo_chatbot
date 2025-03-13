@@ -9,7 +9,7 @@ Persa_Bot is a tattoo information tracker assistant for the tattoo artist indust
 
 **Problem Statement**
 We know how important it is for the artist to build trust with each customer. 
-So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
+So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via a bot exaclty like they would have been done by a human secretary.
 
 ### Scenario 1
 ***
