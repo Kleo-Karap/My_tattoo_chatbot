@@ -8,16 +8,8 @@ Persa_Bot is a tattoo information tracker assistant for the tattoo artist indust
 ***
 
 **Problem Statement**
-
-*Tattoo info tracking*
-<p> Customer is asked to submit information about their tattoo idea. 
-
-   1. Full Name
-   2. E-mail
-   3. Artist name
-   5. Concept
-   6. Size
-   7. Placement 
+We know how important it is for the artist to build trust with each customer. 
+So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
 
 ### Scenario 1
 ***
@@ -35,10 +27,6 @@ Customer wants information about a specific tattoo design
 ### Scenario 3 
 Customer books consulting appointment (fixed duration 1 hour)
 
-   
-**Future Objectives**
-We know how important it is for the artist to build trust with each customer. 
-So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via an bot exaclty like they would have been done by a human secretary.
 
 **Ideal functionalities**
 1. Instagram Integration: We ideally what to integrate this chatbot with our Instagram as a messaging channel, since this is our main source for lead generation.
