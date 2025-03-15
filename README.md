@@ -37,7 +37,7 @@ Customer books consulting appointment (fixed duration 1 hour)- appointment is tr
 
 **Current issues** 
 Appointment booking works on the side of the user, but no access to the tattoo artist's schedule is given to ensure schedule compatibility
-
+Temporary solution: Provide avaiable timeslots on the user to pic from. Update it's Goggle calendar.
 # Getting started
 ```
 pip install rasa
