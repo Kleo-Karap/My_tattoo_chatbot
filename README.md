@@ -4,12 +4,10 @@
 
 **Domain**
 ***
-Persa_Bot is a customer service assistant for tattoo studios. The bot is able to handle queries regarding the following intents: 
-1. Book free consultation (Can I book an appointment for a consultation?)
+Persa_Bot is a Lead Generation assistant for tattoo studios. The bot is able to handle queries regarding the following intents: 
+1. Book free consultation about a specific tattoo design (Can I book an appointment for a consultation?)
 2. Tattoo cost estimator (Can you give me an estimate for the pricing?)
-3. General Questions (I have a general question)
-4. Consulting regarding a specific tattoo design (I have a question about a tattoo design that I have in mind)
-5. Find tattoo idea (I need inspiration for a tattoo)
+3. Find tattoo idea (I need inspiration for a tattoo)
 ***
 
 **Problem Statement**
@@ -23,11 +21,11 @@ So we don't want to automate the whole appointment booking process. Only the par
   
 ### Scenario 2
 ***
-Customer wants information about a specific tattoo design
+Customer wants consultation about a specific tattoo design
 - A Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
-- The bot saves user's given info in [Airtable](https://airtable.com/) sheet through an external API key.
+- The bot saves user's given info in [Airtable](https://airtable.com/) sheet through an external API key, for the artist's reference.
 - User says thank you
-- Bot replies Bye
+- Bot replies bye
 
 ### Scenario 3 
 Customer books consulting appointment (fixed duration 1 hour)- appointment is tracked on user's Google calendar
