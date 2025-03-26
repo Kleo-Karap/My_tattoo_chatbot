@@ -6,9 +6,11 @@
 ***
 Persa_Bot is a customer service assistant for tattoo studios. The bot is able to handle queries regarding the following intents: 
 1. Services (What services do you offer?)
-2. Book free consultation
-3. Tattoo cost estimator
-4. General Questions
+2. Book free consultation (Can I book an appointment for a consultation?)
+3. Tattoo cost estimator (Can you give me an estimate for the pricing?)
+4. General Questions (I have a general question)
+5. Consulting regarding a specific tattoo design (I have a question about a tattoo design that I have in mind)
+6. Find tattoo idea (I need inspiration for a tattoo)
 ***
 
 **Problem Statement**
