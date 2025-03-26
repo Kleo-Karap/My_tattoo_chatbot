@@ -4,18 +4,22 @@
 
 **Domain**
 ***
-Persa_Bot is a tattoo information tracker assistant for the tattoo artist industry.
+Persa_Bot is a customer service assistant for tattoo studios. The bot is able to handle queries regarding the following intents: 
+1. Services (What services do you offer?)
+2. Book free consultation
+3. Tattoo cost estimator
+4. General Questions
 ***
 
 **Problem Statement**
 We know how important it is for the artist to build trust with each customer. 
-So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be done via a bot exaclty like they would have been done by a human secretary.
+So we don't want to automate the whole appointment booking process. Only the parts that are really redundant and can actually be executed via a bot exaclty like they would have been done by a human secretary.
 
 ### Scenario 1
 ***
 - Customer wants to find a tattoo idea.
-- Bot redirects to Persa's Instagram page
-
+- Bot redirects to Persa's Instagram page or AI Tattoo generation apps
+  
 ### Scenario 2
 ***
 Customer wants information about a specific tattoo design
@@ -34,11 +38,6 @@ Customer books consulting appointment (fixed duration 1 hour)- appointment is tr
 3. Book consulting appointment: For customers that need the artists's advice on the design and the body spot --> appointment with a fixed max duration (e.g. 30 minutes). Provide available timeslots starting from current week based on Persa's Google calendar. : Rasa resource: https://rasa.com/blog/connect-your-assistant-with-google-calendar/
 4. Price estimation: FAQ page redirection in which the hourly estimate price chart along with other procedural info are provided.
 
-**User intents covered**
-1. Services (What services do you offer?)
-2. Book free consultation
-3. Tattoo cost estimator
-4. General Questions
 
 **Current issues** 
 Appointment booking works on the side of the user, but no access to the tattoo artist's schedule is given to ensure schedule compatibility
