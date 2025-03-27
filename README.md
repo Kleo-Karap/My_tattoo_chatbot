@@ -21,11 +21,15 @@ So we don't want to automate the whole appointment booking process. Only the par
   
 ### Scenario 2
 ***
-Customer wants consultation about a specific tattoo design
-- A Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
+- User wants consultation about a specific tattoo design
+- Bot asks about preferable communication channel (call/e-mail)
+- e-mail
+- For the e-mail channel a Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
 - The bot saves user's given info in [Airtable](https://airtable.com/) sheet through an external API key, for the artist's reference.
 - User says thank you
-- Bot replies bye
+- Bot makes a summary of the saved slots
+- user says bye
+- bot replies bye
 
 ### Scenario 3 
 Customer books consulting appointment (fixed duration 1 hour)- appointment is tracked on user's Google calendar
