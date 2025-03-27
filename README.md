@@ -27,7 +27,7 @@ So we don't want to automate the whole appointment booking process. Only the par
 - For the e-mail channel a Form is activated in order to collect specific information from the user (Full Name, E-mail, Artist, Concept, Size, Placement)
 - The bot saves user's given info in [Airtable](https://airtable.com/) sheet through an external API key, for the artist's reference.
 - User says thank you
-- Bot makes a summary of the saved slots
+- Bot makes a summary of the saved slots and reassures that the artist will reach out to them (as requested) via e-mail
 - user says bye
 - bot replies bye
 
