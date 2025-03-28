@@ -33,10 +33,13 @@ So we don't want to automate the whole appointment booking process. Only the par
 - bot replies bye
 
 ### Scenario 3 
+***
 User wants a price approximation for a tattoo. We can treat this either similar to Scenario 2 and let the artist contact the user via e-mail. Or we can answer this question statically with an FAQ response like: "Tattoo pricing is based on a few specific things: Location, size, complexity, and style. Our shop minimum is €50.00 and our hourly rates can be between €80.00 to €150.00 per hour based on that criteria."  
 
 ### Scenario 4
-
+***
+- User has a general question about painful tattoo spots
+- Bot replies statically with a predefined response
 
 
 **Ideal functionalities**
