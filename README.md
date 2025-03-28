@@ -32,7 +32,7 @@ So we don't want to automate the whole appointment booking process. Only the par
 - bot replies bye
 
 ### Scenario 3 
-Customer books consulting appointment (fixed duration 1 hour)- appointment is tracked on user's Google calendar
+User wants a price apprximation for a tattoo
 
 
 **Ideal functionalities**
