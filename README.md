@@ -5,10 +5,11 @@
 **Domain**
 ***
 Persa_Bot is a Lead Generation assistant for tattoo studios. The bot is able to handle queries regarding the following intents: 
-1. Book free consultation about a specific tattoo design (Can I book an appointment for a consultation?)
-2. Tattoo cost estimator (Can you give me an estimate for the pricing?)
-3. Find tattoo idea (I need inspiration for a tattoo)
-4. Answer FAQs (What's the most painful body spot for a tattoo?/ Is there a specific post-tattoo skincare I should follow?)
+ 
+1. {book_consultation} Book free consultation about a specific tattoo design (Can I book an appointment for a consultation?)
+2. {get_price_estimate} Tattoo cost estimator (Can you give me an estimate for the pricing?)
+3. {find_tattoo_idea} Find tattoo idea (I need inspiration for a tattoo)
+4. {faq_query} Answer FAQs (e.g. What's the most painful body spot for a tattoo?/ Is there a specific post-tattoo skincare I should follow?)
 ***
 
 **Problem Statement**
